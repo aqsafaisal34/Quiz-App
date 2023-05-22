@@ -38,10 +38,10 @@ class Quiz {
     this.currentQuestionIndex++;
 
     if (this.currentQuestionIndex < this.questions.length) {
-        this.displayQuestion();
-      } else {
-        this.showResult();
-      }
+      this.displayQuestion();
+    } else {
+      this.showResult();
+    }
   }
 
   showResult() {
@@ -53,11 +53,11 @@ class Quiz {
           <button id="reload-quiz">Reload All quiz</button>
       `;
 
-      document.getElementById("reload-quiz").addEventListener("click", () => {
-        quizContainer.style.display = "none";
-        resultsContainer.style.display = "none";
-        quizSelector.style.display = "flex";
-      });
+    document.getElementById("reload-quiz").addEventListener("click", () => {
+      quizContainer.style.display = "none";
+      resultsContainer.style.display = "none";
+      quizSelector.style.display = "flex";
+    });
   }
 
   static shuffleArray(arr) {
